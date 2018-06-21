@@ -1,0 +1,16 @@
+[16-Dec-2017 12:04:26 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/leinedam/public_html/wp-content/themes/madesangoi/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/leinedam/public_html/wp-content/themes/madesangoi/index.php on line 1
+[16-Dec-2017 12:04:43 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/leinedam/public_html/wp-content/themes/madesangoi/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/leinedam/public_html/wp-content/themes/madesangoi/index.php on line 1
+[16-Dec-2017 12:04:43 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/leinedam/public_html/wp-content/themes/madesangoi/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/leinedam/public_html/wp-content/themes/madesangoi/index.php on line 1
+[16-Dec-2017 12:04:43 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/leinedam/public_html/wp-content/themes/madesangoi/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/leinedam/public_html/wp-content/themes/madesangoi/index.php on line 1
