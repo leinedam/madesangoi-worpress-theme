@@ -9,11 +9,11 @@
              <div class="container" >
                     <div class="row">
                         <div class="col-md-12 intro">
-                          <img src="<?php bloginfo('template_url'); ?>/images/logo-tr.png" style="width:135px;margin-bottom:25px; ">
+                          <img src="<?php bloginfo('template_url'); ?>/images/ms2.png" style="width:135px;margin-bottom:25px; ">
                           <h1><?php echo get_theme_mod('showcase_heading', 'Bold Ideas for a Purpose'); ?></h1>
 
-                          <h3 class="quotes"><?php echo get_theme_mod('showcase_description1', 'Multimedia Designer'); ?></h3>
-                          <h3 class="quotes"><?php echo get_theme_mod('showcase_description2', 'Web Developer'); ?></h3>
+                          <h3 class="quotes"><?php echo get_theme_mod('showcase_description1', pll_e('Multimedia Designer')); ?></h3>
+                          <h3 class="quotes"><?php echo get_theme_mod('showcase_description2',  pll_e('Web Developer')); ?></h3>
                           <h3 class="quotes"><?php echo get_theme_mod('showcase_description3', 'Freelancer'); ?></h3>
 
                           <!-- <h3 id="subtitle"> bloginfo(//'description'); ?></h3> -->
@@ -35,9 +35,7 @@
     <div class="container">
         <div class="row title-front">
             <div class="col-md-12">
-                 <h1><a href="<?php echo esc_url( home_url( '/index.php/services/' ) ); ?>">Services
-
-                 </a></h1>
+                 <h1><?php pll_e('Services'); ?></h1>
             </div>
         </div>
 
@@ -58,7 +56,7 @@
   <div id="section-3" class="section">
        <div class="container-fluid center">
             <div class="title-front">
-                 <h1><a href="<?php echo esc_url( home_url( 'index.php/my-portfolio/' ) ); ?>"> Portfolio </a></h1>
+                 <h1><a href="#"> <?php pll_e('Portfolio'); ?> </a></h1>
             </div>
 
 
@@ -101,7 +99,7 @@
         <div class="container-fluid">
         <div class="row title-front">
             <div class="col-md-12">
-               <h1><a href="#">Blog</a></h1>
+               <h1>Blog</h1>
                <br>
             </div>
         </div>

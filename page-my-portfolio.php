@@ -15,10 +15,10 @@
       <div class="container">
           <ul class="list-inline">
             <li  class="list-inline-item"><?php the_breadcrumb(); ?>  &nbsp;&nbsp;&#187;&nbsp;&nbsp;</li>
-            <li  class="list-inline-item"><a class="smooth1" href="#web"> Web Design </a> | </li>
-            <li  class="list-inline-item"><a class="smooth1" href="#apps"> Apps </a> | </li>
-            <li  class="list-inline-item"><a class="smooth1" href="#graphic"> Graphic Design </a> | </li>
-            <li  class="list-inline-item"><a class="smooth1" href="#illustration"> Illustration </a> | </li>
+            <li  class="list-inline-item"><a class="smooth1" href="#web"><?php pll_e('Web Design'); ?></a> | </li>
+            <li  class="list-inline-item"><a class="smooth1" href="#apps"> <?php pll_e('Apps & Prototypes'); ?> </a> | </li>
+            <li  class="list-inline-item"><a class="smooth1" href="#graphic"> <?php pll_e('Graphic Design'); ?> </a> | </li>
+            <li  class="list-inline-item"><a class="smooth1" href="#illustration"> <?php pll_e('Graphic Art'); ?> </a> | </li>
             <li  class="list-inline-item"><a class="smooth1" href="#videos"> Videos </a>  </li>
           </ul>
       </div>
@@ -32,7 +32,7 @@
         <div class="container-fluid ">
             <div class="row sutil-gray" id="web">
               <div class="col-md-12 text-center space-top ">
-                <h1>Web Design</h1>
+                <h1><?php pll_e('Web Design'); ?></h1>
               </div>
                   <?php
                       $args = array(
@@ -71,7 +71,7 @@
 
             <div class="row sutil-gray" id="apps">
               <div class="col-md-12 text-center space-top ">
-                <h1>Apps/Prototypes/Components</h1>
+                <h1><?php pll_e('Apps & Prototypes'); ?></h1>
               </div>
                   <?php
                       $args = array(
@@ -110,7 +110,7 @@
 
             <div class="row sutil-gray " id="graphic">
               <div class="col-md-12 space-top  text-center ">
-                <h1>Graphic Design  </h1>
+                <h1><?php pll_e('Graphic Design'); ?></h1>
               </div>
                   <?php
                       $args = array(
@@ -148,7 +148,7 @@
 
             <div class="row sutil-gray" id="illustration">
               <div class="col-md-12 space-top text-center">
-                <h1>Illustration / 3D</h1>
+                <h1><?php pll_e('Graphic Art'); ?> </h1>
               </div>
 
                   <?php

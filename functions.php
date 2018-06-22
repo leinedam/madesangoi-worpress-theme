@@ -5,16 +5,7 @@
 require_once('wp_bootstrap_navwalker.php');
 
 
-/*
- * Languages
- *
- */
-//
-// function register_strings() {
-//   pll_register_string('madesangoi', 'Services');
-//   pll_register_string('madesangoi', 'Portfolio');
-// }
-// add_action('init','register_strings');
+
 
   /*
    * stylesheets
@@ -215,8 +206,12 @@ require get_template_directory(). '/inc/customizer.php';
 
 
 
-//Creating Custom Post Types -- Portfolio --
-
+//
+//
+/*
+* Creating Custom Post Types -- Portfolio -- ENGLISH
+*/
+//
 function madesangoi_portfolio() {
 	$labels = array(
 		'name'               => _x( 'portfolio', 'madesangoi' ),
@@ -258,26 +253,60 @@ function madesangoi_portfolio() {
 add_action( 'init', 'madesangoi_portfolio' );
 
 
-
+//
+//
+/*
+* BREADCRUMBS
+*/
+//
 function the_breadcrumb() {
-    echo '<a href="'.home_url().'" ">Home</a>';
+    echo '<a href="'.home_url().'" ">Made Sangoi</a>';
+
     if (is_category() || is_single()) {
-        echo "&nbsp;&nbsp;&#187;&nbsp;&nbsp;";
-        the_category(' &bull; ');
+
+    //  echo "&nbsp;&nbsp;&#187;&nbsp;&nbsp;";
+    //  the_category(' &bull; ');
             if (is_single()) {
                 echo " &nbsp;&nbsp;&#187;&nbsp;&nbsp; ";
                 the_title();
             }
-    } elseif (is_page()) {
+    }
+    elseif (is_page()) {
         echo "&nbsp;&nbsp;&#187;&nbsp;&nbsp;";
         echo the_title();
-    } elseif (is_search()) {
+    }
+    elseif (is_search()) {
         echo "&nbsp;&nbsp;&#187;&nbsp;&nbsp;Search Results for... ";
         echo '"<em>';
         echo the_search_query();
         echo '</em>"';
     }
 }
+
+
+
+
+/*
+ * Languages
+ *
+ */
+//
+
+
+function register_strings() {
+
+  pll_register_string('madesangoi', 'Multimedia Designer');
+  pll_register_string('madesangoi', 'Web Developer');
+
+  pll_register_string('madesangoi', 'Services');
+  pll_register_string('madesangoi', 'Portfolio');
+
+  pll_register_string('madesangoi', 'Web Design');
+  pll_register_string('madesangoi', 'Apps & Prototypes');
+  pll_register_string('madesangoi', 'Graphic Design');
+  pll_register_string('madesangoi', 'Graphic Art');
+}
+ add_action('init','register_strings');
 
 
 ?>

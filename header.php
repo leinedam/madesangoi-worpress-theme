@@ -57,7 +57,10 @@
   <!-- LOGO CONTAINER -->
 <div >
     <div class="logo-contain" >
-         <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>">  <span class="logo-text">Made Sangoi</span></a>
+         <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>">
+
+          <img src="<?php bloginfo('template_url'); ?>/images/ms2.png" style="width:55px; ">
+        </a>
     </div>
 </div>
 <?php endif; ?>

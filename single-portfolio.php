@@ -10,13 +10,9 @@
 
     <div class="bread-container"  id="breadcrumbs" >
       <div class="container">
-          <?php
-          echo '<a href="'.home_url().'" ">Home</a>';
-          echo "&nbsp;&nbsp;&#187;&nbsp;&nbsp;";
-          echo '<a href="'.home_url( '/index.php/my-portfolio/' ) .'" ">Portfolio</a>';
-          echo "&nbsp;&nbsp;&#187;&nbsp;&nbsp;";
-          echo  the_title();
-           ?>
+        <li  class="list-inline-item">
+          <?php the_breadcrumb(); ?>
+        </li>
       </div>
     </div>
 
